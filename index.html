@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Currency conversor</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <nav>
+        <a href="https://www.linkedin.com/in/vitor-s-b01135199/" target="_blank"
+          >Linkedin</a
+        >
+        <a href="https://github.com/Vic232323" target="_blank">Github</a>
+      </nav>
+    </header>
+
+    <div class="wrapper">
+      <div class="wrap-forms">
+        <h1>Currency Conversor</h1>
+
+        <form>
+          <label></label>
+          <select name="currencies" class="currencies">
+            <optgroup class="label-from" label="Currencies"></optgroup>
+          </select>
+
+          <input
+            type="number"
+            class="amount"
+            placeholder="Amount/Quantidade"
+            step="0.01"
+            min="0.01"
+            required
+          />
+        </form>
+
+        <span>to</span>
+
+        <form>
+          <label></label>
+          <select name="currencies" class="currencies">
+            <optgroup class="label-to" label="Currencies"></optgroup>
+          </select>
+          <input type="text" class="result" placeholder="result" disabled />
+        </form>
+        <button type="submit" class="submit-btn">Convert</button>
+      </div>
+    </div>
+
+    <div class="resultado"></div>
+  </body>
+</html>
